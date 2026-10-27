@@ -1,0 +1,6 @@
+id,type,name,rating,distance_km,estimated_minutes,phone,address,latitude,longitude
+SRV-01,hospital,Apollo Hospital,4.8,2.4,8,+91 80 2630 4050,"154/11 Opp. IIMB, Bannerghatta Road, Bangalore",12.8954,77.5988
+SRV-02,mechanic,MG Road Auto Care,4.6,1.1,5,+91 80 4123 7890,"45/2 MG Road, Bangalore",12.9738,77.6119
+SRV-03,towing,24/7 Towing Service,4.7,3.5,12,+91 98450 11223,"Residency Road, Bangalore",12.9698,77.6080
+SRV-04,hospital,Manipal Hospital,4.9,4.2,15,+91 80 2502 4444,"98 HAL Old Airport Road, Bangalore",12.9592,77.6568
+SRV-05,rescue,Express Roadside Assist,4.5,2.8,10,+91 99000 44556,"Indiranagar 100ft Road, Bangalore",12.9784,77.6408

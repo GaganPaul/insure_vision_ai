@@ -1,0 +1,2 @@
+id,user_id,incident_id,assistance_type,location,status,created_at
+AST-1001,USR-2026-0001,INC-24012234,Towing,"MG Road Junction, Bangalore",In Progress,2026-01-22T14:47:00Z

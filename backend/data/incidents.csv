@@ -1,0 +1,2 @@
+id,user_id,date,time,location,severity,speed,speed_limit,braking,signal,impact,status,created_at
+INC-24012234,USR-2026-0001,2026-01-22,14:45,"MG Road Junction, Bangalore",Minor,48 km/h,40 km/h,Minor Delay,Red,Front Right,Analyzed,2026-01-22T14:45:00Z

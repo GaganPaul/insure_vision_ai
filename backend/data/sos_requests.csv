@@ -1,0 +1,2 @@
+id,user_id,incident_id,latitude,longitude,location,status,created_at
+SOS-1001,USR-2026-0001,INC-24012234,12.9716,77.5946,"MG Road Junction, Bangalore",Demo SOS request recorded,2026-01-22T14:46:00Z

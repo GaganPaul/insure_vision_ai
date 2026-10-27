@@ -1,0 +1,4 @@
+id,incident_id,factor,responsible,description
+FAC-101,INC-24012234,Excessive Speed,Other Vehicle,15 km/h over the speed limit
+FAC-102,INC-24012234,Signal Violation,Other Vehicle,Ran red light
+FAC-103,INC-24012234,Late Braking,Your Vehicle,Minor braking delay

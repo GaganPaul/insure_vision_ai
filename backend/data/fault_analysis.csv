@@ -1,0 +1,2 @@
+id,incident_id,user_fault,other_fault,confidence,analysis_method,created_at
+FA-24012234,INC-24012234,35,65,87,Rule-Based Physics & Telemetry Engine,2026-01-22T14:48:00Z

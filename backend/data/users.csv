@@ -1,0 +1,2 @@
+id,name,email,phone,password_hash,vehicle_type,vehicle_number,created_at
+USR-2026-0001,Gagan Paul,gagan@email.com,+91 98765 43210,$2b$12$GOCaK6EcbkGwfsAZ88kty.n6aBGXMauRLcM/yv/V.CXlT9MfyvebS,Four-Wheeler (Car),KA-01-MJ-5023,2026-01-15T10:00:00Z
