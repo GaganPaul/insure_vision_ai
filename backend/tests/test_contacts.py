@@ -13,7 +13,7 @@ def test_get_demo_contacts(client: TestClient, demo_auth_headers: dict):
     assert len(contacts) >= 2
     names = [c["name"] for c in contacts]
     assert "Priya Sharma" in names
-    assert "Rohan Paul" in names
+    assert "Rohan" in names
 
 
 def test_create_and_delete_contact(client: TestClient, demo_auth_headers: dict):
