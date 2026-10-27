@@ -122,8 +122,22 @@ async def unhandled_exception_handler(request: Request, exc: Exception):
 
 
 # ==========================================
-# Health Check Endpoint
+# Health Check & Root Endpoints
 # ==========================================
+
+@app.get("/", tags=["System"])
+def root():
+    """Root landing endpoint with system navigation links."""
+    return {
+        "application": "InsureVisionAI API",
+        "status": "online",
+        "version": "1.0.0",
+        "documentation": "/docs",
+        "redoc": "/redoc",
+        "health_check": "/health",
+        "api_v1_prefix": "/api/v1"
+    }
+
 
 @app.get("/health", tags=["System"])
 def health_check():
