@@ -45,3 +45,4 @@ def test_create_and_delete_contact(client: TestClient, demo_auth_headers: dict):
     # Ensure deleted
     contacts_after = client.get("/api/v1/contacts", headers=demo_auth_headers).json()
     assert contact_id not in [c["id"] for c in contacts_after]
+

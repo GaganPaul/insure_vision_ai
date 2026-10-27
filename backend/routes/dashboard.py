@@ -100,3 +100,4 @@ def get_all_safety_tips():
 def get_daily_safety_tip():
     """Retrieve the deterministic daily road safety tip."""
     return get_daily_tip()
+

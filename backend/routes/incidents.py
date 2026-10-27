@@ -114,3 +114,4 @@ def delete_incident(
             detail=f"Incident with ID '{incident_id}' not found or unauthorized."
         )
     return {"message": f"Incident {incident_id} successfully deleted."}
+

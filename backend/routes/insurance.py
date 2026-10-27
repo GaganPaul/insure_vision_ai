@@ -107,3 +107,4 @@ def delete_policy(
 
     csv_storage.delete_record("insurance.csv", insurance_id)
     return {"message": f"Policy {insurance_id} deleted successfully."}
+

@@ -110,3 +110,4 @@ def logout(current_user: Dict[str, Any] = Depends(get_current_user)):
         "message": "Successfully logged out. Please discard your client token.",
         "user_id": current_user.get("id")
     }
+

@@ -100,3 +100,4 @@ def delete_contact(
 
     csv_storage.delete_record("contacts.csv", contact_id)
     return {"message": f"Contact {contact_id} successfully deleted."}
+

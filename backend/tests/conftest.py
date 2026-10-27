@@ -46,7 +46,7 @@ def demo_auth_headers(client: TestClient) -> dict:
     """Login with the pre-seeded demo user and return Authorization Bearer headers."""
     resp = client.post(
         "/api/v1/auth/login",
-        json={"email": "gagan@email.com", "password": "123456"}
+        json={"email": "nuzair@email.com", "password": "123456"}
     )
     assert resp.status_code == 200, f"Demo login failed: {resp.text}"
     token = resp.json()["access_token"]
@@ -76,3 +76,4 @@ def secondary_auth_headers(client: TestClient) -> dict:
     assert login_resp.status_code == 200, f"Secondary login failed: {login_resp.text}"
     token = login_resp.json()["access_token"]
     return {"Authorization": f"Bearer {token}"}
+

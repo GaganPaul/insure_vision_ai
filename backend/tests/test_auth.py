@@ -20,7 +20,7 @@ def test_demo_login_success(client: TestClient):
     """Verify demo user can authenticate using specified demo credentials."""
     response = client.post(
         "/api/v1/auth/login",
-        json={"email": "gagan@email.com", "password": "123456"}
+        json={"email": "nuzair@email.com", "password": "123456"}
     )
     assert response.status_code == 200
     data = response.json()
@@ -32,7 +32,7 @@ def test_login_invalid_password(client: TestClient):
     """Verify authentication fails for incorrect password."""
     response = client.post(
         "/api/v1/auth/login",
-        json={"email": "gagan@email.com", "password": "wrongpassword"}
+        json={"email": "nuzair@email.com", "password": "wrongpassword"}
     )
     assert response.status_code == 401
     assert "Invalid email or password" in response.json()["detail"]
@@ -70,7 +70,7 @@ def test_signup_duplicate_email_rejection(client: TestClient):
     """Verify duplicate signup attempts with existing email are rejected."""
     payload = {
         "name": "Duplicate Tester",
-        "email": "gagan@email.com",  # Demo email already registered
+        "email": "nuzair@email.com",  # Demo email already registered
         "password": "anyPassword123"
     }
     response = client.post("/api/v1/auth/signup", json=payload)
@@ -83,7 +83,7 @@ def test_get_current_user_profile(client: TestClient, demo_auth_headers: dict):
     response = client.get("/api/v1/auth/me", headers=demo_auth_headers)
     assert response.status_code == 200
     data = response.json()
-    assert data["email"] == "gagan@email.com"
+    assert data["email"] == "nuzair@email.com"
     assert "password_hash" not in data
 
 
@@ -98,3 +98,4 @@ def test_invalid_bearer_token(client: TestClient):
     headers = {"Authorization": "Bearer invalid.forged.jwt.token"}
     response = client.get("/api/v1/auth/me", headers=headers)
     assert response.status_code == 401
+

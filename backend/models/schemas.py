@@ -292,3 +292,4 @@ class ReportSummary(BaseModel):
     insurance: Optional[InsuranceResponse] = None
     generated_at: str
     disclaimer: str
+

@@ -247,3 +247,4 @@ def update_assistance_status(
         status=updated["status"],
         created_at=updated["created_at"]
     )
+

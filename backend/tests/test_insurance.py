@@ -147,3 +147,4 @@ def test_dashboard_aggregation(client: TestClient, demo_auth_headers: dict):
     assert data["stats"]["total_incidents"] >= 1
     assert data["stats"]["coverage_status"] in ("Active", "Expired", "No Policy")
     assert "daily_safety_tip" in data
+

@@ -128,11 +128,11 @@ class CSVStorage:
         now_iso = "2026-01-22T14:45:00Z"
 
         if filename == "users.csv":
-            # Demo account: gagan@email.com / 123456
+            # Demo account: nuzair@email.com / 123456
             demo_user = {
                 "id": demo_user_id,
-                "name": "Gagan Paul",
-                "email": "gagan@email.com",
+                "name": "Nuzair",
+                "email": "nuzair@email.com",
                 "phone": "+91 98765 43210",
                 "password_hash": hash_password("123456"),
                 "vehicle_type": "Four-Wheeler (Car)",
@@ -298,7 +298,7 @@ class CSVStorage:
         elif filename == "contacts.csv":
             demo_contacts = [
                 {"id": "CONT-01", "user_id": demo_user_id, "name": "Priya Sharma", "relationship": "Spouse", "phone": "+91 98765 12345"},
-                {"id": "CONT-02", "user_id": demo_user_id, "name": "Rohan Paul", "relationship": "Brother", "phone": "+91 98765 67890"}
+                {"id": "CONT-02", "user_id": demo_user_id, "name": "Rohan", "relationship": "Brother", "phone": "+91 98765 67890"}
             ]
             for contact in demo_contacts:
                 self.insert_record("contacts.csv", contact)
@@ -484,3 +484,4 @@ class CSVStorage:
 
 # Singleton instance pointing to backend/data
 csv_storage = CSVStorage()
+

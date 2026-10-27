@@ -85,3 +85,4 @@ def get_incident_factors(
         factors = analysis.get("factors", [])
 
     return factors
+

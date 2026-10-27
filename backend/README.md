@@ -143,9 +143,9 @@ All data files are automatically initialized on startup without duplicating reco
 
 | Attribute | Demo Account Value |
 | :--- | :--- |
-| **Email** | `gagan@email.com` |
+| **Email** | `nuzair@email.com` |
 | **Password** | `123456` |
-| **Name** | Gagan Paul |
+| **Name** | Nuzair |
 | **Vehicle** | Four-Wheeler (Car) - `KA-01-MJ-5023` |
 | **Pre-Seeded Incident** | `INC-24012234` (MG Road Junction, Bangalore) |
 | **Insurance Provider** | ICICI Lombard (`POL-2025-884920`) |
@@ -278,3 +278,4 @@ All 30 tests cover:
 2. **Emergency Protocol Notice**: The SOS and Assistance endpoints record dispatch requests for simulation purposes. For real-world emergencies, motorists must dial **112** (Unified Emergency) or **108** (Ambulance) directly.
 3. **Stateless JWT Invalidation**: Standard JWTs expire according to `ACCESS_TOKEN_EXPIRE_MINUTES`. Immediate revocation on logout requires a token denylist or Redis cache in production.
 4. **Third-Party Integrations**: Insurer claim submissions and roadside listings represent prototype records and do not connect to external insurer underwriting APIs or live GPS fleets.
+

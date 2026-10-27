@@ -119,3 +119,4 @@ def get_service_by_id(service_id: str):
         longitude=float(srv.get("longitude", 0.0)),
         is_demo=True
     )
+

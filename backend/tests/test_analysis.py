@@ -59,3 +59,4 @@ def test_analysis_cross_user_rejection(
     """Verify other users cannot access analysis of an incident they do not own."""
     response = client.get("/api/v1/analysis/INC-24012234", headers=secondary_auth_headers)
     assert response.status_code == 404
+

@@ -76,3 +76,4 @@ def download_incident_report(
             status_code=status.HTTP_400_BAD_REQUEST,
             detail=f"Unsupported format '{format}'. Supported formats are 'pdf' and 'json'."
         )
+

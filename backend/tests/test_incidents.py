@@ -105,3 +105,4 @@ def test_delete_incident(client: TestClient, demo_auth_headers: dict):
     # Ensure it's now gone
     get_resp = client.get(f"/api/v1/incidents/{temp_id}", headers=demo_auth_headers)
     assert get_resp.status_code == 404
+

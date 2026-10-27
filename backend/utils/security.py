@@ -111,3 +111,4 @@ def get_current_user(credentials: HTTPAuthorizationCredentials = Depends(securit
     safe_user = dict(user)
     safe_user.pop("password_hash", None)
     return safe_user
+

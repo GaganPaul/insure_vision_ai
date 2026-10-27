@@ -21,3 +21,4 @@ def chat_assistant(payload: ChatRequest):
     """
     response_data = chat_service.answer(payload.message)
     return ChatResponse(**response_data)
+
