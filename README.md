@@ -22,4 +22,3 @@ uvicorn main:app --reload --host 127.0.0.1 --port 8000
 
 - **Swagger Documentation**: http://127.0.0.1:8000/docs
 - **Health Check**: http://127.0.0.1:8000/health
-- **Demo Credentials**: `nuzair@email.com` / `123456` (Name: Nuzair)
